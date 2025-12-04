@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login.exe</title>
+     <link rel="icon" href="/imagens/EXE.png" type="image/png">
+    <style> 
+
+        body {
+            background-image: url('/imagens/horror-forest-background-for-photoshop.jpg');
+            background-repeat: repeat-y;
+            background-position: center center;
+            background-size: cover;
+            height: auto;
+        }
+
+        h1{
+            font-size: 60px;
+            color: #810505;
+            text-shadow: 
+            2px 2px 0 #0e0101,
+            4px 4px 0 #441616,
+            6px 6px 0 #24242b;
+            text-align: center;
+        }
+        
+        h2, h3, h4 {
+            text-align: center;
+        }
+
+        .login-title {
+            color: #a70000;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 5px solid #532626;
+            border-radius: 5px;
+            background-color: #fffefe;
+        }
+        .login-legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #a70000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 class="login-title">Login</h1>
+
+        <form action="/processar-dados" method="post" class="login-form">
+            <fieldset>
+            <legend class="login-legend">Formulário de Login</legend>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required><br><br>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+            <br><br>
+            </fieldset>
+            
+            <legend class="login-legend">Esqueceu a senha?</legend>
+
+            <a href="/recuperar-senha.html">Clique aqui para recuperar sua senha</a>
+
+        
+
+            <button type="submit" value="Enviar">Enviar</button>
+        </form>
+        
+    </main>
+</body>
+
+</html>
